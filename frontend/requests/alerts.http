@@ -1,0 +1,21 @@
+POST http://127.0.0.1:8000/alerts/
+Content-Type: application/json
+
+{
+  "alert_type": "FraudTip",
+  "message": "API test alert",
+  "status": "active"
+}
+
+###
+
+POST http://127.0.0.1:8000/verification/status-update
+Content-Type: application/json
+
+{
+  "user_id": 123,
+  "username": "user123",
+  "status": "approved"
+}
+
+###

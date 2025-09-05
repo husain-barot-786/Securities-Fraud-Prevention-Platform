@@ -1,0 +1,21 @@
+# Backend requirements for Securities Fraud Prevention Platform
+
+fastapi==0.95.1                   # FastAPI web framework
+uvicorn==0.22.0                  # ASGI server for FastAPI
+sqlalchemy==2.0.21               # ORM for database interaction
+pydantic==2.0.3                  # Data validation and settings management (core)
+pydantic-settings==1.0.1         # Separate package for Pydantic BaseSettings (v2)
+anyio==3.6.2                    # Async utilities used by FastAPI and Starlette
+httpx==0.24.1                   # HTTP client, useful for external API calls/tests
+pytest==8.0.1                   # Unit testing framework
+pytest-asyncio==0.20.3          # Async support for pytest
+requests==2.31.0                # Simple HTTP requests lib
+python-telegram-bot==20.4       # Bot framework for Telegram integration
+beautifulsoup4==4.12.2          # HTML parsing library (web scraper)
+asgi-lifespan==1.0.0            # Handle lifespan events in ASGI apps (startup/shutdown)
+websockets==11.0.3              # Required for WebSocket support in FastAPI
+
+# Additional notes:
+# - Ensure you use a virtual environment before installing.
+# - Run `pip install -r requirements.txt` to install all dependencies.
+# Version numbers can be updated as per project needs, but these are tested compatible versions.

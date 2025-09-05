@@ -1,0 +1,134 @@
+/* Dark mode overrides */
+
+body.dark {
+  background-color: #292a35;
+  color: #f0f0f0;
+}
+
+body.dark .sidebar {
+  background-color: #141521;
+  color: #e0e0ef;
+  border-color: #1d1f2a;
+  box-shadow: none;
+}
+
+body.dark .sidebar .sidebar-link {
+  color: #cfd1e0;
+}
+
+body.dark .sidebar .sidebar-link:hover,
+body.dark .sidebar .sidebar-link.active {
+  color: #63a7ff;
+  background-color: rgba(99, 167, 255, 0.1);
+}
+
+body.dark .sidebar .sidebar-link:hover .sidebar-link-pill,
+body.dark .sidebar .sidebar-link.active .sidebar-link-pill {
+  background-color: rgba(99, 167, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(99, 167, 255, 0.2);
+  color: #63a7ff;
+}
+
+body.dark .toggle-btn {
+  color: #eee;
+}
+
+body.dark .checkbox-label {
+  background-color: #222;
+}
+
+body.dark .page-title,
+body.dark .centered-card label,
+body.dark .centered-card {
+  color: #e0e4f2;
+}
+
+body.dark .page-title {
+  font-weight: 700;
+}
+
+body.dark .centered-card .page-input {
+  background-color: #21283b;
+  border-color: #4a529c;
+  color: #cbd5ff;
+}
+
+body.dark .centered-card .page-input:focus {
+  border-color: #4a529c;
+  outline-color: #4a529c;
+}
+
+body.dark .centered-card .big-btn {
+  background: linear-gradient(90deg, #23316e 30%, #4257a8 80%);
+  box-shadow: 0 6px 20px rgba(52, 71, 143, 0.6);
+}
+
+body.dark .centered-card .big-btn:hover,
+body.dark .centered-card .big-btn:focus-visible {
+  background: linear-gradient(90deg, #1a2457 30%, #32458a 80%);
+  box-shadow: 0 8px 24px rgba(25, 38, 74, 0.9);
+}
+
+body.dark .info {
+  background-color: #1f3a20;
+  color: #5ea557;
+  border-color: #4c8f4c;
+}
+
+body.dark .error {
+  background-color: #4a1920;
+  color: #e87b87;
+  border-color: #9e323a;
+}
+
+/* Light/Dark toggle */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+  margin-left: 2px;
+}
+
+.fa-sun {
+  color: #f39c12;
+  margin-right: 2px;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 5px;
+  top: 6.5px;
+  border-radius: 50%;
+  transition: transform 0.1s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.theme-toggle-global {
+  position: fixed;
+  top: 24px;
+  right: 40px;
+  z-index: 2001;
+}
